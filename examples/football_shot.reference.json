@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1",
+  "project_id": "football_goal_reference_01",
+  "sport": "football",
+  "source": {
+    "path": "input/highlights/football_goal_01.mp4",
+    "fps": 25,
+    "width": 1920,
+    "height": 1080,
+    "frame_count": 225
+  },
+  "entities": [
+    {
+      "id": "player_home_10",
+      "kind": "player",
+      "team": "home",
+      "display_name": "Primary attacker",
+      "color": "#F2C94C"
+    },
+    {
+      "id": "player_away_gk",
+      "kind": "goalkeeper",
+      "team": "away",
+      "display_name": "Goalkeeper",
+      "color": "#27AE60"
+    },
+    {
+      "id": "ball_1",
+      "kind": "ball",
+      "display_name": "Ball"
+    }
+  ],
+  "tracks": [
+    {
+      "entity_id": "player_home_10",
+      "coordinate_space": "image_normalized",
+      "points": [
+        { "frame": 35, "x": 0.32, "y": 0.61, "confidence": 0.96 },
+        { "frame": 90, "x": 0.46, "y": 0.58, "confidence": 0.95 },
+        { "frame": 142, "x": 0.59, "y": 0.55, "confidence": 0.94 },
+        { "frame": 190, "x": 0.65, "y": 0.57, "confidence": 0.91 }
+      ]
+    },
+    {
+      "entity_id": "ball_1",
+      "coordinate_space": "image_normalized",
+      "points": [
+        { "frame": 35, "x": 0.34, "y": 0.68, "confidence": 0.92 },
+        { "frame": 110, "x": 0.53, "y": 0.65, "confidence": 0.88 },
+        { "frame": 142, "x": 0.61, "y": 0.62, "confidence": 0.94 },
+        { "frame": 190, "x": 0.86, "y": 0.43, "confidence": 0.86 }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "event_shot_01",
+      "type": "shot",
+      "start_frame": 35,
+      "impact_frame": 142,
+      "end_frame": 190,
+      "actor_ids": ["player_home_10", "ball_1"],
+      "target_ids": ["player_away_gk"],
+      "confidence": 0.93,
+      "attributes": {
+        "result": "goal",
+        "shot_type": "volley",
+        "preserve_result": true
+      }
+    }
+  ],
+  "anime_profile": {
+    "visual_language": "original_clean_cel_anime",
+    "output_fps": 24,
+    "drawing_fps": 12,
+    "jump_multiplier": 7.0,
+    "speed_multiplier": 3.2,
+    "impact_multiplier": 4.5,
+    "aspect_ratio": "16:9"
+  }
+}
+
