@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+
+# Large/local media and model artifacts
+input/
+output/
+models/
+weights/
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.safetensors
+*.ckpt
+*.pth
+*.onnx
+
+# Editor/OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
