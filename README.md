@@ -32,6 +32,10 @@ The initial implementation provides:
 
 Actual frame rendering, character rigs and effects compositing are later milestones. See [docs/analyse.md](docs/analyse.md) and [docs/architecture.md](docs/architecture.md).
 
+## Working with Codex
+
+For the permanent GitHub connection, Codex Cloud environment setup, required reading order, daily development workflow and troubleshooting steps, see [isAkis.md](isAkis.md).
+
 ## Requirements
 
 - Python 3.10+
